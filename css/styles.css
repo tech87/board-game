@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dbdbdb;
+  background-image: url(../image/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-align: center;
+}
+
+.weapons {
+  display: inline-flex;
+  background-color: white;
+}
+#again {
+  font-size: 2em;
+  text-align: center;
+  background: #deaf73;
+  border-radius: 15px;
+  color: #e8e7e7;
+  padding: 8px 25px 8px 25px;
+  text-decoration: none;
+  border: none;
+}
+#again:hover {
+  background: #e8e7e7;
+  color: #deaf73;
+}
+.buttons {
+  margin: 0 auto;
+}
+.btn-attack-1,
+.btn-attack-2,
+.btn-defend-1,
+.btn-defend-2 {
+  border-radius: 15%;
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+}
+.btn-attack-1,
+.btn-attack-2 {
+  background-color: #deaf73;
+}
+.btn-defend-1,
+.btn-defend-2 {
+  background-color: grey;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+.btn-attack-1:hover,
+.btn-attack-2:hover {
+  background-color: white;
+  color: #deaf73;
+  border: none;
+}
+.btn-defend-1:hover,
+.btn-defend-2:hover {
+  background-color: white;
+  color: grey;
+  border: none;
+}
+.cup-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#gameOver {
+  text-align: center;
+  margin-top: 250px;
+}
+.gameOver-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  font-size: 1.4em;
+  padding: 5px;
+  width: 750px;
+  height: 410px;
+  display: inline-block;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1700px;
+}
+
+.player-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  flex-direction: column;
+  min-height: 550px;
+  min-width: 200px;
+  max-width: 300px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-top: 150px;
+}
+
+#extras {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 700px;
+}
+
+.card1-container,
+.card2-container,
+.card3-container {
+  padding: 30px;
+  width: 280px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.card1-container {
+  background-color: rgba(195, 205, 0, 0.7);
+}
+
+.card2-container {
+  background-color: rgba(211, 69, 27, 0.7);
+}
+
+.card3-container {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card1-container,
+.card2-container,
+.card3-container {
+  display: none;
+}
+
+.player-container .player,
+.player-container .weapon {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.player-container .player-container {
+  margin: 0 auto;
+}
+
+.endgame {
+  color: white;
+}
+
+#board-game {
+  min-width: 714px;
+  min-height: 416.5px;
+  max-width: 714px;
+  max-height: 416.5px;
+  background-size: cover;
+  border-radius: 5px;
+  display: border-box;
+  margin-right: 0px;
+  margin-top: 220px;
+  position: relative;
+}
+
+#board-game .box {
+  border-radius: 4px;
+  border: solid 0.5px grey;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-width: 59.5px;
+  min-height: 59.5px;
+  float: left;
+  box-sizing: border-box;
+  cursor: url(../image/cursor.png), default;
+}
+
+#board-game .obstacle {
+  background-image: url("../image/obstacle.png");
+  background-size: 60px 60px;
+  background-color: #5e803b;
+}
+
+#board-game .weapon.wp-2,
+.wp-2 {
+  background-image: url("../image/wp-2.png");
+  background-size: 60px 60px;
+}
+
+#board-game .weapon.wp-3,
+.wp-3 {
+  background-image: url("../image/wp-3.png");
+  background-size: 60px 60px;
+}
+
+#board-game .weapon.wp-4,
+.wp-4 {
+  background-image: url("../image/wp-4.png");
+  background-size: 60px 60px;
+}
+
+#board-game .weapon.wp-5,
+.wp-5 {
+  background-image: url("../image/wp-5.png");
+  background-size: 60px 60px;
+}
+
+#board-game .weapon.wp-1,
+.wp-1 {
+  background-image: url("../image/wp-1.png");
+  background-size: 60px 60px;
+}
+#board-game .player1 {
+  background-image: url("../image/player-1.png") !important;
+  background-size: 60px 60px;
+  background-position: no-repeat;
+}
+
+#board-game .player2 {
+  background-image: url("../image/player-2.png") !important;
+  background-size: 60px 60px;
+}
+
+.ball-1 img,
+.ball-2 img,
+#player-1,
+#player-2 {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+#player-1 .player,
+#player-2 .player {
+  font-size: 20px;
+  text-align: center;
+  color: grey;
+}
+
+.player-container .win {
+  font-size: 2em;
+}
+
+#player-1 .player-name {
+  color: white;
+}
+
+#player-2 .player-name {
+  color: white;
+}
+#player-1 .score,
+#player-2 .score {
+  font-size: 1.4em;
+}
+#winner {
+  text-transform: uppercase;
+  font-weight: 20;
+}
+.active-board {
+  background-color: rgba(206, 137, 82, 0.7);
+}
+h2,
+h3,
+h4,
+h1,
+li {
+  color: white;
+}
+li {
+  font-size: 1.1rem;
+}
+
+#gameOver,
+.btn-attack-1,
+.btn-attack-2,
+.btn-defend-1,
+.btn-defend-2 {
+  display: none;
+}
+
+#rules {
+  font-size: 1em;
+  text-align: center;
+  background: #deaf73;
+  border-radius: 15px;
+  color: #e8e7e7;
+  text-decoration: none;
+  border: none;
+  padding: 5px;
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#rules:hover {
+  background: #e8e7e7;
+  color: #deaf73;
+}
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 3px;
+  background: #deaf73;
+}
+.close {
+  margin-left: 750px;
+  text-decoration: none;
+  color: white;
+}
